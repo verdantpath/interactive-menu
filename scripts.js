@@ -4,6 +4,7 @@ jQuery(function() {
     if (vegetarian == false) {
       vegetarian = true;
       console.log(vegetarian);
+      $('li.fish').detach();
     }
   }); // end button
   jQuery('button#restoreMe').on('click', function() {
