@@ -5,6 +5,7 @@ jQuery(function() {
       vegetarian = true;
       console.log(vegetarian);
       $f = $('li.fish').parent().parent().detach();
+      $('.hamburger').replaceWith('<li class="portabello"><em>Portabello Mushroom</em></li>');
     }
   }); // end button
   jQuery('button#restoreMe').on('click', function() {
