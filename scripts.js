@@ -1,4 +1,5 @@
 jQuery(function() {
+
   var vegetarian = false;
   jQuery('button#vegOn').on('click', function() {
     if (vegetarian == false) {
@@ -14,7 +15,7 @@ jQuery(function() {
     if (vegetarian == true) {
       vegetarian = false;
       console.log(vegetarian);
-      $('.menu-entrees li:nth-child(2)').addClass('selected');
+      $('.menu-entrees').children().first().before($f);
     }
   });
 });
