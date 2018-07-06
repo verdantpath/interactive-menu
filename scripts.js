@@ -16,6 +16,7 @@ jQuery(function() {
       vegetarian = false;
       console.log(vegetarian);
       $('.menu-entrees').children().first().before($f);
+      $('.portabello').replaceWith('<li class="hamburger">hamburger</li>');
     }
   });
 });
