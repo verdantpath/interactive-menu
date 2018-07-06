@@ -17,6 +17,10 @@ jQuery(function() {
       console.log(vegetarian);
       $('.menu-entrees').children().first().before($f);
       $('.portabello').replaceWith('<li class="hamburger">hamburger</li>');
+      $('.tofu').each(function(i) {
+        $(this).after($m[i]);
+      });
+      $('.tofu').remove();
     }
   });
 });
