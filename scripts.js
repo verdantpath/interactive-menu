@@ -1,6 +1,7 @@
 jQuery(function() {
 
   var vegetarian = false;
+  $('.tofu').parent().parent().addClass('veg-leaf');
   jQuery('button#vegOn').on('click', function() {
     if (vegetarian == false) {
       vegetarian = true;
@@ -9,6 +10,7 @@ jQuery(function() {
       $('.hamburger').replaceWith('<li class="portabello"><em>Portabello Mushroom</em></li>');
       $('.meat').after('<li class="tofu">Tofu</li>');
       $m = $('li.meat').detach();
+      $('.tofu').parent().parent().addClass('veg-leaf');
     }
   }); // end button
   jQuery('button#restoreMe').on('click', function() {
